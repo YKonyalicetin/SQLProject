@@ -14,5 +14,8 @@ For a given module and type of examination, sp_Notentabelle_Modul_Pruefung creat
 ## Triggers
 For every change in tb_Leistungen a trigger is activated that either updates a grading table created by sp_Notentabelle_Modul_Pruefung or, if not available, creates a new respective table.
 
+## User Roles
+The database can be accessed by students and lecturers. Students can only see their own grading due to data protection of other students' gradings. Lecturer can see all gradings of all students for their own courses. Lecturers can also add new grades through the above mentioned procedure.
+
 
 ![Diagramm](/Diagramm/Datenbankdiagramm_Projekt_Univerwaltung-1.png)
