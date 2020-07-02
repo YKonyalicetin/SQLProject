@@ -9,7 +9,7 @@ The database can be used to administer lists of students, lecturers, courses of 
 ## Stored Procedures
 sp_Noteneintrag adds entries to tb_Leistungen and requires the following specifications: ID of lecturer, ID of course, ID of type of examination, matriculation number, ID of semester and the date on which the examination is taken. This stored procedure checks whether the entry is correctly specified and displays helpful error messages if the information entered cannot be employed.
 
-For a given module and type of examination, sp_Notentabelle_Modul_Pruefung creates table with respective name that displays the grading table, thus enabling comparison between students. Already employed tables for the same combination will be replaced.
+For a given module and type of examination, sp_Notentabelle_Modul_Pruefung creates a table that is named respectively and which displays the grading table. Thus, the table enables comparison between students. Already employed tables for the same combination will be replaced.
 
 ## Triggers
 For every change in tb_Leistungen a trigger is activated that either updates a grading table created by sp_Notentabelle_Modul_Pruefung or, if not available, creates a new respective table.
